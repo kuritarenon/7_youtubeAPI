@@ -249,7 +249,7 @@
 
         // 関数を定義（関数式）
         const ytSearch = function (val) {
-            const key = 'AIzaSyAOJnj98cd-IB7f7yJ19By3C8H59vKEJ8A'; //自分のキーに書き換えます。
+            const key = ''; //自分のキーに書き換えます。
             const num = 10;
             const part = 'snippet';
             const type = 'video';
@@ -272,7 +272,7 @@
                         const ytId = (movie["id"]["videoId"]);
                         const ytTitle = (movie["snippet"]["title"]);
                         //optionを作成して、videoIdとtitleを所定の場所に設置し、要素を追加していく。
-                        selectvideo.innerHTML += `<option value="${ytId}" ${ytTitle}</option>`
+                        selectvideo.innerHTML += `<option value="${ytId}"> ${ytTitle}</option>`
                         // const optionTag = document.createElement('option');
                         // optionTag.textContent = ytTitle;
                         // optionTag.setAttribute('value', ytId);
